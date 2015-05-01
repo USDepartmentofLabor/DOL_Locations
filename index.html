@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Department of Labor Locations</title>
+    <link rel="shortcut icon" href="http://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/US-DeptOfLabor-Seal.svg/1200px-US-DeptOfLabor-Seal.svg.png">
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!--JQUERY MISSIONS-->
+
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li id="DOL" class="sidebar-brand">
+                    <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/US-DeptOfLabor-Seal.svg/1200px-US-DeptOfLabor-Seal.svg.png" alt="DOL" height="42" width="42"> DOL Agencies
+                </li>
+                 <li>
+                    <p id = "BLS" href="#" title="Bureau of Labor Statistics" target="_none">BLS</p>
+                </li>
+                <li>
+                    <p id ="EBSA" href="#" title="Employee Benefits Security Administration" target="_none">EBSA</p>
+                </li>
+                <li>
+                    <p id = "ETA" href="#" title="Employment and Training Administration" target="_none">ETA</p>
+                </li>
+                 <li>
+                    <p id="JC" href="#" title="Job Corps" target="_none">JC</p>
+                </li>
+                <li>
+                    <p id="MSHA" href="#" title="Mine Safety and Health Administration" target="_none">MSHA</p>
+                </li>
+                <li>
+                    <p id="OA" href="#" title="Office of Apprenticeship" target="_none">OA</p>
+                </li>                 
+                <li>
+                    <p id="OALJ" href="#" title ="Office of Administrative Law Judges" target="_none">OALJ</p>
+                </li>  
+                <li>
+                    <p id="OFCCP" href="#" title="Office of Federal Contract Compliance Programs" target="_none">OFCCP</p>
+                </li>
+                <li>
+                    <p id="OASAM" href="#" title="Office of the Assistant Secretary for Administration and Management " target="_none">OASAM</p>
+                </li>
+                <li>
+                    <p id="OIG" href="#" title="Office of the Inspector General" target="_none">OIG</p>
+                </li>
+                <li>
+                    <p id="OLMS" href="#" title ="Office of Labor Management Standards" target="_none">OLMS</p>
+                </li>
+                <li>
+                    <p id="OPA" href="#" title="Office of Public Affairs" target="_none">OPA</p>
+                </li>
+                <li>
+                    <p id = "OSHA" href="#" title ="Occupational Safety & Health Administration" target="_none">OSHA</p>
+                </li>
+                <li>
+                    <p id="OWCP" href="#" title="Office of Workers' Compensation Programs" target="_none">OWCP</p>
+                </li>         
+                <li>
+                    <p id="WB" href="#" title="Women's Bureau" target="_none">WB</p>
+                </li>               
+                <li>
+                    <p id="WHD" href="#" title="Wage and Hour Division" target="_none">WHD</p>
+                </li>
+                <li>
+                    <p id="VETS" href="#" title="Veterans' Employment and Training Service" target="_none">VETS</p>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <!--<h3>Dept of Labor Locations</h3><br>-->
+		
+                        <iframe width='100%' height='450' frameborder='0' src='https://dolinnovation.cartodb.com/viz/d3f76bc8-ef43-11e4-b168-0e018d66dc29/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="desc" id="desc">
+               <center> <h4>Mission of the US Department of Labor</h4> To foster, promote, and develop the welfare of the wage earners, job seekers, and retirees of the United States; improve working conditions; advance opportunities for profitable employment; and assure work-related benefits and rights.</center><br>
+        </div>
+        <div id="misc"  class="boxsub">
+            <center>
+            <br><b>Love this data?</b>
+            <a class="box" href="data/locations.csv" target="_none"> <b>Download it</b> </a>
+            </center>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+   
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+<script>
+         $('#BLS').mouseover('click',function(){
+            $('#desc').html('<center><h4>Bureau of Labor Statistics </h4><a href="http://www.bls.gov" target="_none"> BLS website </a><br> The <a href="http://www.bls.gov">Bureau of Labor Statistics</a> is the principal Federal agency responsible for measuring labor market activity, working conditions, and price changes in the economy. Its mission is to collect, analyze, and disseminate essential economic information to support public and private decision-making. As an independent statistical agency, BLS serves its diverse user communities by providing products and services that are objective, timely, accurate, and relevant. </center>');
+        });
+
+         $('#OA').mouseover('click',function(){
+            $('#desc').html('<center><h4>Office of Apprenticeship </h4><a href="http://www.dol.gov/apprenticeship" target="_none"> OA website </a><br> The Office of Apprenticeship (OA) offers employers in every industry the tools to develop a highly skilled workforce to help grow their business. For workers, OA offers opportunities to earn a salary while learning the skills necessary to succeed in high-demand careers. OA exemplifies high standards, instructional rigor and quality training. Whether you are an employer looking to hire, train or retain a skilled workforce, or a worker looking for a new career in a well-paying occupation, OA will help you achieve your goals.  </center>');
+        });
+        $('#EBSA').mouseover('click',function(){
+            $('#desc').html("<center><h4>Employee Benefits Security Administration </h4> <a href='www.dol.gov/ebsa/' target='_none'> EBSA website </a><br>The mission of the Employee Benefits Security Administration is to assure the security of the retirement, health and other workplace related benefits of America's workers and their families. We will accomplish this mission by developing effective regulations; assisting and educating workers, plan sponsors, fiduciaries and service providers; and vigorously enforcing the law. <br></center>");
+        });
+        $('#ETA').mouseover('click',function(){
+            $('#desc').html("<center><h4>Employment and Training Administration</h4>  <a href='http://www.doleta.gov/' target='_none'> ETA website </a> <br> The Employment and Training Administration (ETA) administers federal government job training and worker dislocation programs, federal grants to states for public employment service programs, and unemployment insurance benefits. These services are primarily provided through state and local workforce development systems.<br></center>");
+        });
+         $('#OALJ').mouseover('click',function(){
+            $('#desc').html("<center><h4>Office of Administrative Law Judges (OALJ)</h4>  <a href='http://www.oalj.dol.gov/' target='_none'> OALJ website </a> <br>Administrative law judges from the United States Department of Labor's Office of Administrative Law Judges (OALJ) preside over formal hearings concerning many labor-related matters. The office's mission is to render fair and equitable decisions under the governing law and the facts of each case. </center>");
+        });
+        $('#OFCCP').mouseover('click',function(){
+            $('#desc').html("<center><h4>Office of Federal Contract Compliance Programs (OFCCP)</h4>  <a href='http://www.dol.gov/ofccp/' target='_none'> OFCCP website </a> <br>The purpose of the Office of Federal Contract Compliance Programs is to enforce, for the benefit of job seekers and wage earners, the contractual promise of affirmative action and equal employment opportunity required of those who do business with the Federal government.</center>");
+        });
+        $('#OASAM').mouseover('click',function(){
+            $('#desc').html("<center><h4>Office of the Assistant Secretary for Administration and Management (OASAM)</h4>  <a href='http://www.dol.gov/oasam/' target='_none'> OASAM website </a> <br>The Office of the Assistant Secretary for Administration and Management (OASAM) provides the infrastructure and support that enables the Department of Labor to perform its mission. OASAM provides leadership and support for Departmental business operations and procurement; budget and finance; information technology; human resources and civil rights; security and emergency management; and strategic planning.</center>");
+        });
+        $('#OIG').mouseover('click',function(){
+            $('#desc').html("<center><h4>Office of the Inspector General(OIG)</h4>  <a href='http://www.oig.dol.gov/' target='_none'> OIG website </a> <br>The Office of the Inspector General (OIG) serves the American Workforce, the Department of Labor, and the Congress by providing independent and objective oversight of Departmental programs through audits and investigations, and by combatting the influence of labor racketeering in the workplace.</center>");
+        });
+        $('#OLMS').mouseover('click',function(){
+            $('#desc').html("<center><h4>Office of Labor Management Standards (OLMS)</h4>  <a href='http://www.dol.gov/olms' target='_none'> OLMS website </a> <br>The Office of Labor-Management Standards (OLMS) administers and enforces most provisions of the Labor-Management Reporting and Disclosure Act of 1959 (LMRDA). The LMRDA primarily promotes union democracy and financial integrity in private sector labor unions through standards for union officer elections and union trusteeships and safeguards for union assets. Additionally, the LMRDA promotes labor union and labor-management transparency through reporting and disclosure requirements for labor unions and their officials, employers, labor relations consultants, and surety companies.</center>");
+        });
+        $('#OPA').mouseover('click',function(){
+            $('#desc').html("<center><h4>Office of Public Affairs (OPA)</h4>  <a href='http://www.dol.gov/opa' target='_none'> OPA website </a> <br>The Office of Public Affairs handles all communications for the Department of Labor. </center>");
+        });
+        $('#OSHA').mouseover('click',function(){
+            $('#desc').html("<center><h4>Occupational Safety & Health Administration (OSHA)</h4>  <a href='https://www.osha.gov/' target='_none'> OSHA website </a> <br>With the Occupational Safety and Health Act of 1970, Congress created the Occupational Safety and Health Administration (OSHA) to assure safe and healthful working conditions for working men and women by setting and enforcing standards and by providing training, outreach, education and assistance.</center>");
+        });
+        $('#OWCP').mouseover('click',function(){
+            $('#desc').html("<center><h4>Office of Workers Compensation Programs (OWCP)</h4> <a href='http://www.dol.gov/owcp/' target='_none'> OWCP website </a> <br>The Office of Workers' Compensation Programs administers four major disability compensation programs which provide wage replacement benefits, medical treatment, vocational rehabilitation and other benefits to certain workers or their dependents who experience work-related injury or occupational disease.</center>");
+        });
+        $('#WB').mouseover('click',function(){
+            $('#desc').html("<center> <h4>Women's Bureau (WB)</h4> <a href='http://www.dol.gov/wb/' target='_none'> WB website </a> <br>The Women’s Bureau's mandate include: identifying, researching and analyzing the topics working women care about most; pioneering innovative policies and programs to address them; and enhancing public education and outreach efforts to raise awareness on key issues and developments affecting women in the workforce.</center>");
+        });
+       $('#WHD').mouseover('click',function(){
+            $('#desc').html("<center><h4>Wage and Hour Division (WHD)</h4><a href='http://www.dol.gov/whd/' target='_none'> WHD website </a> <br>The Wage and Hour Division (WHD) enforces Federal minimum wage, overtime pay, recordkeeping, and child labor requirements of the Fair Labor Standards Act. WHD also enforces the Migrant and Seasonal Agricultural Worker Protection Act, the Employee Polygraph Protection Act, the Family and Medical Leave Act, wage garnishment provisions of the Consumer Credit Protection Act, and a number of employment standards and worker protections as provided in several immigration related statutes. Additionally, WHD administers and enforces the prevailing wage requirements of the Davis Bacon Act and the Service Contract Act and other statutes applicable to Federal contracts for construction and for the provision of goods and services.</center>");
+        });
+       $('#VETS').mouseover('click',function(){
+            $('#desc').html("<center><h4>Veterans' Employment and Training Service (VETS)</h4><a href='http://www.dol.gov/vets/' target='_none'> VETS website </a> <br> We prepare America's veterans, service members and their spouses, for meaningful careers, provide them with employment resources and expertise, protect their employment rights and promote their employment opportunities.</center>");
+        });
+       $('#MSHA').mouseover('click',function(){
+            $('#desc').html("<center><h4>Mine Safety and Health Administration (MSHA)</h4> <a href='http://www.msha.gov/' target='_none'> MSHA website </a> <br> The purpose of the Mine Safety and Health Administration (MSHA) is to prevent death, disease, and injury from mining and to promote safe and healthful workplaces for the Nation's miners. </center>");
+        });
+        $('#JC').mouseover('click',function(){
+            $('#desc').html("<center><h4>Job Corps (JC)</h4> <a href='http://www.jobcorps.gov/' target='_none'> JC website </a> <br>Job Corps (JC) is a free education and training program that helps young people learn a career, earn a high school diploma or GED, and find and keep a good job. For eligible young people at least 16 years of age that qualify as low income, Job Corps provides the all-around skills needed to succeed in a career and in life.  </center>");
+        });
+        $('#DOL').mouseover('click',function(){
+            $('#desc').html("<center><h4>US Department of Labor</h4> <a href='http://www.dol.gov/' target='_none'> DOL website </a> <br>Mission of the US Department of Labor</h4> To foster, promote, and develop the welfare of the wage earners, job seekers, and retirees of the United States; improve working conditions; advance opportunities for profitable employment; and assure work-related benefits and rights. </center>");
+        });
+    
+    
+</script>
+</body>
+
+</html>
