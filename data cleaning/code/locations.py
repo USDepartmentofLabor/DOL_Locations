@@ -202,8 +202,8 @@ if __name__ == '__main__':
 
 	d = create_data(locations)
 
-	#print d
 	csv_writer(d, path)
+
 
 
 
